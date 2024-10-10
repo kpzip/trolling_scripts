@@ -1,13 +1,13 @@
 token = ""
-course_id = "22786"
-assignment_id = "281951"
+course_id = ""
+assignment_id = ""
 
 
 
 
 headers = {
-    "Origin": "https://ucsb.instructure.com",
-    "Referer": f"https://ucsb.instructure.com/courses/{course_id}/assignments/{assignment_id}"
+    "Origin": "",
+    "Referer": f""
 }
 
 body_tags = {
