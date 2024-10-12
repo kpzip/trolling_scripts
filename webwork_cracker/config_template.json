@@ -1,3 +1,14 @@
 {
-
+  "run_formatter": true,
+  "use_formatter_output": true,
+  "initial_url": "first url",
+  "problem_num": "problem # (as string)",
+  "effective_usr_urlencoded": "?effectiveUser=<username>%40<ext>",
+  "minimums": [
+    "minimum values to start guessing each feild (as numbers not strings)"
+  ],
+  "maximums": [
+    "maximum values to stop guessing each feild (as numbers not strings)"
+  ],
+  "step": "ammount to increment guesses by (as number not string)"
 }
