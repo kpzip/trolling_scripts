@@ -4,6 +4,7 @@ import json
 
 
 def run_formatter():
+    print("Formatting...")
     with open("form.html", 'r') as infile:
         to_format = infile.read()
 

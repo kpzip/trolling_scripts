@@ -35,7 +35,7 @@ url = cfg["initial_url"]
 problem_id = cfg["problem_num"]
 effective_user = cfg["effective_usr_urlencoded"]
 
-post_url = url + problem_id
+post_url = url + "/" + problem_id
 problem_url = post_url + effective_user
 
 minimums = cfg["minimums"]
