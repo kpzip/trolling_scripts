@@ -78,7 +78,7 @@ with open(zig_install_dir + 'zig_updater.log', 'a', encoding = 'utf-8') as log_f
                     log_file.write(message)
                     last_update = done
     
-    log_file.write(log('\n'))
+    print('\n', end = '')
     if '-do' in sys.argv:
         log_file.write(log('Download Complete. Exiting...'))
         sys.exit()
