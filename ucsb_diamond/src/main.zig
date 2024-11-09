@@ -6,7 +6,7 @@ pub fn main() !void {
     defer _ = gpa.deinit();
     const allocator = gpa.allocator();
 
-    const uri = std.Uri.parse("https://my.sa.ucsb.edu/gold/");
+    const uri = try std.Uri.parse("https://my.sa.ucsb.edu/gold/");
 
     // http Client
     var client = std.http.Client{ .allocator = allocator };
@@ -15,7 +15,7 @@ pub fn main() !void {
     const header_buf: []u8 = try allocator.alloc(u8, 1024 * 2);
     defer allocator.free(header_buf);
 
-    var req = try client.open(.GET, uri, .{ .server_header = header_buf });
+    var req = try client.open(.GET, uri, .{ .server_header_buffer = header_buf });
     defer req.deinit();
 
     try req.send();
