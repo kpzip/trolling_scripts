@@ -22,7 +22,7 @@ pub fn main() !void {
     try req.finish();
     try req.wait();
 
-    print("Response status: {d}\n\n", .{req.response.status});
+    //print("Response status: {d}\n\n", .{req.response.status});
 
     // Print out the headers
     print("{s}\n", .{req.response.iterateHeaders().bytes});
